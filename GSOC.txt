@@ -1,0 +1,20 @@
+ROCm backend for HPX.Compute
+Abstract: HPX.Compute is a layer on top of HPX which provides a way to distribute work and data for parallel algorithms on accelerators. The existing implementation supports execution on CUDA-enabled GPUs. In this project a ROCm backend for AMD GPUs should be implemented based on the existing CUDA backend. The work could involve either implementing a completely new backend optimized for AMD GPUs or the existing CUDA backend could be ported to use HIP which would allow a single implementation to be used for both AMD and NVidia GPUs. Other tasks involve implementing and testing additional parallel algorithms, implementing a concurrent executor, supporting work dispatch to multiple devices, or optimizing and comparing the performance of different backends.
+Difficulty: Medium
+Expected result: The backend is comparable with CUDA in terms of supported features and can schedule at least few algorithms, including the index-based parallel for-loop.
+Knowledge Prerequisite: Basic knowledge in CUDA or ROCm, good knowledge in C++.
+Mentor: Mikael Simberg (mikael%20simberg)
+适用于HPX.Compute的ROCm后端
+摘要： HPX.Compute是HPX之上的一层，它提供了一种在加速器上分发并行算法的工作和数据的方法。现有实现支持在支持CUDA的GPU上执行。在这个项目中，应该基于现有的CUDA后端实现AMD GPU的ROCm后端。这项工作可能涉及实现针对AMD GPU优化的全新后端，或者可以将现有的CUDA后端移植为使用HIP，这将允许将单个实现同时用于AMD和NVidia GPU。其他任务包括实现和测试其他并行算法，实现并发执行器，支持将工作分配到多个设备或优化和比较不同后端的性能。
+难度：中等
+预期结果：在支持的功能方面，后端可以与CUDA相提并论，并且可以调度至少几种算法，包括基于索引的并行for循环。
+知识前提： CUDA或ROCm的基本知识，C ++的良好知识。
+导师： Mikael Simberg（mikael.simberg@cscs.ch）
+
+cmake_minimum_required(VERSION 2.8)
+project(CMakeDemo)
+set(CMAKE_SYSTEM_VERSION 1)
+set(CMAKE_CXX_COMPILER "g++")
+set(CMAKE_BUILD_TYPE Debug)
+set(build)
+add_subdirectory(src)
