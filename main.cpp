@@ -17,9 +17,6 @@ void multiple(x)
 }
 int main(int, char **)
 {
-    hpx::future<int> f = hpx::async([]() { return 42; });
-    hpx::cout << "Mutiple Matrix" << hpx::endl;
-    hpx::cout << "f contains" << f.get() << hpx : endl;
     hpx::future<double> g[9];
     for (int i = 0; i < 9; i++)
         g[i] = hpx::async(multiple(i));
