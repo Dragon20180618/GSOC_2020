@@ -1,4 +1,4 @@
-main.exe : main.cpp
-	g++ -o main.exe main.cpp
+main.out : main.cpp
+	g++ -o main.out main.cpp
 clean : 
-	remove main.exe
+	remove main.out
