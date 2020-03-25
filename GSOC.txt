@@ -10,11 +10,3 @@ Mentor: Mikael Simberg (mikael%20simberg)
 预期结果：在支持的功能方面，后端可以与CUDA相提并论，并且可以调度至少几种算法，包括基于索引的并行for循环。
 知识前提： CUDA或ROCm的基本知识，C ++的良好知识。
 导师： Mikael Simberg（mikael.simberg@cscs.ch）
-
-cmake_minimum_required(VERSION 2.8)
-project(CMakeDemo)
-set(CMAKE_SYSTEM_VERSION 1)
-set(CMAKE_CXX_COMPILER "g++")
-set(CMAKE_BUILD_TYPE Debug)
-set(build)
-add_subdirectory(src)
