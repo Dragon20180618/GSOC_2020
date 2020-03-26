@@ -17,27 +17,22 @@
 * **Github** : https://github.com/Dragon20180618
 * **Time Zone** :  UTC+8:00 (Beijing, China)
 
-* How much time do I plan to spend on my GSoC :
+* **How much will I plan to spend on my GSoC **:
 
-  In my opinion, If you are interested in your work, you will never feel tired and bored.
+  I think, If you are interested in my work, I will never feel tired and bored.
 
-  I can spend the most time to do the project after lectures.
+  I can spend the most of the time to do the project after lectures.
 
 * **Start time** : from now on . 
 
 
 
-## Background Information
+## Skills
 
 
 
-I am interested in parallel computing, so , I have done some Research in
-
-​		CUDA, Message Passing Interface, OpenMP
-
-When I found the CUDA project of HPX, I felt exited. I think it's my honor. It's belong to me.
-
-During the study of CUDA,  I tried Molecular dynamics by cuda speed. 
+I am interested in parallel computing. And I have done some easy research in CUDA, Message Passing Interface and OpenMP. 
+When I found the CUDA project of HPX, I felt exited. If I will be selected, I think it's my honor. During the study of CUDA,  I tried to achieve Molecular dynamics by the cuda speed. 
 
 * language :
 
@@ -49,7 +44,7 @@ During the study of CUDA,  I tried Molecular dynamics by cuda speed.
 
   Python: 2 `Pygame` `pyautogui` `pyCUDA`...
 
-* HPX matrix which you kindly ask:
+* HPX matrix :
 
   https://github.com/Dragon20180618/GSOC_2020
 
@@ -61,19 +56,19 @@ During the study of CUDA,  I tried Molecular dynamics by cuda speed.
 
 
 
-+ **Solution** : I have check your demands. So, The first thing is look through and understand your CUDA code. At the same time, I will spend time on ROCm. After that,  explore the interface or 
++ **Solution** : I have checked your demands. So, The first thing is through and understand your CUDA code. At the same time, I will spend time on ROCm. After that,  Exploring the interface or 
 
-  other way to come true ROCm. If It is not simple and efficient. I will check HPI. change `CUDA` to `HIP`. As you know, it will allow a single implementation to be used for both AMD and NVidia GPUs.
-
-
-
-+ **Result** : The backend is comparable with CUDA. It can schedule some algorithms, `cuFFT`,`parallel for-loop`. Simplify the HPX-CUDA. Now CUDA 10.2 has updated.
+  the other way is to come true the ROCm. If It is not simple and efficient, I can change `CUDA` to `HIP`. As you know, it will allow a single implementation to be used for both AMD and NVidia GPUs. HIP is very similar to CUDA. In fact, the most of instructions are just different names. For example hipMemcpy, hipMalloc, hipFree. Before that, I had some contact with HIP. This will allow me to complete the task more quickly.
+  
+  
+  
++ **Result** : CUDA code will be replaced by HIP code. Dramatically improve code portability. The backend is comparable with CUDA. It can schedule some algorithms, `cuFFT`,`parallel for-loop`. Simplify the HPX-CUDA. Now CUDA 10.2 has updated.
 
 
 
 ## Proposed Milestones and Schedule
 
-It's my first time to the wonderful adventure of GSoC. So, I learned the Google Schedule carefully.
+It's my first time to have a wonderful adventure in GSoC. So, I learned the Google Schedule carefully.
 
 
 
@@ -92,7 +87,7 @@ It's my first time to the wonderful adventure of GSoC. So, I learned the Google 
 
 
 ### **week 1** 
-Perform basic CUDA-ROCm connection. I will convert the direct conversion program to ROCm. The ones that are not directly convertible are pending. Recording the advantage of ROCm.
+Perform the basic CUDA-ROCm connection. I will convert the direct conversion program to ROCm. The ones that are not directly convertible are pending. Recording the advantage of ROCm.
 
 
 
@@ -102,19 +97,19 @@ I will schedule some easy algorithm in ROCm, as like `for-loop`.  And I will gua
 
 
 ### **week 3** 
-Converting the main CUDA program to HIP. Based on the accumulated CUDA to ROCm experience, this time CUDA to HIP will be faster. Good code is changed. If I find that the code in the CUDA source program needs to be updated, I will modify the source code to some extent, such as making multiple GPU calls through omp. cudaStream_t multi-stream processing.
+Converting the main CUDA program to HIP. Based on the accumulated CUDA to ROCm experience, this time I turn the CUDA to HIP will be faster. Good code is changed. If I find that the code in the CUDA source program needs to be updated, I will modify the source code to some extent, such as making multiple GPU calls through OMP. cudaStream_t multi-stream processing.
 
 
 
 ### **week 4**
-Completing remaining CUDA to HIP. And I have Check your hpx cuda file, as like get_cuda_targets.cpp. and your examples for example: cublas reality. And In my opinion, If I need to copy the newer CUDA include files to include/hpx/compute/ ?
+Completing remaining the CUDA to HIP. And I have checked your hpx cuda file, as like get_cuda_targets.cpp. and your examples such as cublas reality. Do I need to copy the newer CUDA include files to include/hpx/compute/ ?
 
   Maybe `libs_compute_cuda_api`  is the better choice. 
 
 
 
 ### **week 5** 
-add algorithm to HIP, `parallel for-loop` test.
+Adding algorithm to HIP, `parallel for-loop` test.
 
 
 
@@ -124,7 +119,7 @@ Comparing the reality of ROCm with the reality of HIP. Get the best reality or w
 
 
 ### **week 7** 
-Add implementation of advanced algorithms, as like `cuFFT`, `cuBlas`, `Thrust`. Give `scoped_active_target.hpp` one optimization. One by one streams.
+Adding implementation of advanced algorithms, as like `cuFFT`, `cuBlas`, `Thrust`. Give `scoped_active_target.hpp` one optimization. One by one streams.
 
 
 
@@ -138,8 +133,8 @@ Final test.
 ### Here are the awards I have received related to this project
 
 * Blue Bridge Cup Regional 5th
-* Blue Bridge Cup National Programming Competition  second prize.
+* Blue Bridge Cup National Programming Competition second prize.
 
-> > I think two months  coding maybe get a better software. Not only basic power, may be we will let hpx-cuda be much better.
+> > I think two months for coding maybe get a better software. Not only the basic power, may be we will let hpx-cuda be much better.
 
  
